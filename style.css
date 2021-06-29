@@ -1,0 +1,741 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+}
+.headerTop{
+    width: 100%;
+    background: #f4f5f7;
+}
+.navBar{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItem{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.atlassianLogo{
+    max-width: 200px;
+}
+.atlassianImg{
+    width: 100%;
+}
+.navproducts ul{
+    display: flex;
+    align-items: center;
+}   
+.navproducts ul li {
+    list-style: none;
+    
+}
+.products{
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.products:hover{
+    background: rgba(218, 218, 218, 0.329);
+}
+.navproducts ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #42526e;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+.imgArrow,.imgArrow1{
+    width: 10px ;
+    height: 10px;
+    margin:  5px 0 0 5px;
+}
+
+.formNav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imgSearch{
+    width: 15px;
+    margin-right: 5px;
+}
+.imgUser{
+    width: 20px ;
+}
+.formBtn{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #0052cc;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    background: transparent;
+}
+.formBtn:hover{
+    background: rgba(218, 218, 218, 0.329);
+    cursor: pointer;
+    
+}
+hr{
+    display: flex;
+    height: 25px;
+    width: 1px;
+    margin: 0;
+    border: none;
+    background: #aaaaaa;
+}
+.myAccount{
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.myAccount:hover{
+    background: rgba(218, 218, 218, 0.329);
+    cursor: pointer;
+    
+}
+.accountDiscription{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #0052cc;
+    text-decoration: none;
+}
+.navBottom{
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+
+}
+.navBot{
+    max-width: 1200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.botItem{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.imgArrow2{
+    display: none;
+}
+.menuItems{
+    height: 60px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+.menuItems a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    color: #0052cc;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+.menuItems a:hover{
+    color: #4476d1;
+    border-bottom: 2px solid #c7c6c6;
+    padding-bottom: 18px;
+}
+.accountBot{
+    border: 1px solid #0052cc;
+}
+.mainTeam{
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.teamTool{
+    max-width: 520px;
+    padding: 20px 30px 20px 20px;
+    
+}
+.teamTitle{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #425260;
+    padding-bottom: 30px;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+.btnTeam{
+    max-width: 110px;
+    display: flex;
+    justify-content: center;
+    background: #0052cc;
+}
+.btnTeam:hover{
+    background: #0052cc;
+}
+.btnTeam a{
+    color: white;
+}
+.progress{
+    max-width: 790px;
+    padding: 15px 15px 0 15px;
+}
+.progressImg{
+    width: 100%;
+}
+@media (min-width:1024px){
+    .teamTool{
+        margin-left: 80px;
+    }
+}
+@media  (max-width:1000px) {
+    .menuItems{
+        display: none;
+    }
+    .navproducts ul li a{
+        font-size: 12px;
+    }
+    .navItem{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgArrow{
+       width:  8px;
+    }
+    .products{
+        margin: 0;
+        padding: 5px;
+    }
+    .imgArrow2{
+        max-width: 15px;
+        margin-left: 10px;
+        display: block;
+    }
+}
+@media  (max-width:770px){
+    .mainTeam{
+        display: flex;
+        flex-direction: column;
+    }
+    .teamTool{
+        max-width: 100%;
+
+    }
+    .teamTitle{
+        font-size: 32px;
+    }
+}
+@media  (max-width:660px){
+    .formBtn,.myAccount,hr,.products{
+        display: none;
+    }
+    .accountBot{
+        display: block;
+    }
+    .imgSearch{
+        width: 25px;
+    }
+    .btnTeam{
+        display: flex;
+        justify-content: center;
+    }
+}
+.aboutEstablished{
+    max-width: 870px;
+    margin: auto;
+    text-align: center;
+    padding: 64px 15px 32px 15px;
+}
+.establishedTitle{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #253858;
+    margin-bottom:25px ;
+}
+.establishedDiscription{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #253858;
+}
+.softwarePlan{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 16px 0 64px;
+}
+.planCard{
+    max-width: 790px;
+    padding: 16px;
+}
+.planImg{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 6px 30px 30px rgb(23 43 77 / 10%);
+}
+.aboutPlan{
+    max-width: 450px;
+    padding: 16px;
+}
+.planTitle{
+    font-size: 24px;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #253858;
+    margin-bottom: 16px;
+}
+.planDiscription{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .35px;
+    padding-bottom: 32px;
+    color: #253858;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+.secondPlan{
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:770px) {
+    .softwarePlan{
+        display: flex;
+        flex-direction: column;
+    }
+    .planImg{
+        display: flex;
+        order: 1;
+    }
+    .aboutPlan{
+        max-width: 100%;
+    }
+    .aboutPlan{
+        order: 2;
+    }
+    .establishedTitle{
+        font-size: 24px;
+    }
+    
+}
+.aboutInterface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interfaceDiscription{
+    max-width: 440px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 15px;
+    color: #253858;
+}
+.interfaceTitle{
+    max-width: 430px;
+    padding: 15px;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    color: #253858;
+}
+.interfaceone{
+    max-width: 880px;
+    margin: auto;
+    padding: 96px 16px;
+    
+}
+.interfaceImg{
+    width: 100%;
+}
+.interfacetwo{
+    max-width: 730px;
+    
+    display: none;
+}
+
+@media (max-width:770px) {
+    .aboutInterface{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .interfaceTitle{
+        max-width: 100%;
+        font-size: 24px;
+        padding: 15px 15px 0 15px;
+    }
+    .interfaceDiscription{
+        max-width: 100%;
+    }
+    .interfaceone{
+        display: none;
+    }
+    .interfaceImg{
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+    }
+    .interfacetwo{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .component__image{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.heading{
+    color: #253858;
+}
+.linkDefault{
+    font-size: 16px;
+    text-decoration: none;
+    color: #0052cc;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+}
+.linkDefault:hover{
+    text-decoration: underline;
+}
+.componemts{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding: 16px 20px 32px;
+}
+.componentBox{
+    max-width: 265px;
+    margin: 15px;
+}
+.componentCard{
+    max-width: 110px;
+    
+}
+.componentImg{
+    width: 100%;
+    height: 70px;
+    object-fit: contain;
+}
+.componentTitle{
+    font-size: 20px;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    margin-bottom: 24px;
+    padding-top: 15px ;
+    color: #253858;
+}
+.componentDiscription{
+    font-size: 16px;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    margin-bottom: 24px;
+    color: #091e42;
+    font-weight: 500;
+}
+.componentLink{
+    display: flex;
+    align-items: flex-end;
+}
+.componentLink a:hover{
+    text-decoration: underline;
+    padding-right: 7px;
+}
+.componentLink a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0052cc;
+    font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    padding-right: 3px;
+    text-decoration: none;
+
+}
+.linkImg{
+    max-width: 15px;
+}
+.border{
+    padding: 64px 20px 32px 20px;
+}
+.borderBot{
+    content: "";
+    max-width: 600px;
+    height: 2px;
+    background: #aaaaaa;
+    margin:auto;
+    opacity: 0.5;
+}
+@media (max-width:1020px){
+    .componemts{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 0;
+    }
+    .componentBox{
+        max-width: 470px ;
+
+    }
+}
+@media (max-width:770px){
+    .componemts{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns:  1fr ;
+        padding: 0;
+    }
+    .componentBox{
+        max-width: 100% ;
+    }
+}
+.roadMap{
+    max-width: 1100px;
+    margin:auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 25px 20px 64px;  
+}
+.aboutRoadmap{
+    padding: 15px;
+}
+.roadBtn{
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.connectImg{
+    max-width: 660px;
+    padding: 15px;
+}
+.component__image{
+    width: 100%;
+}
+@media (max-width:1020px){
+    .roadMap{
+        max-width: 100%;
+        padding: 20px 0 64px;
+    }
+    .connectImg{
+        max-width: 500px;
+        padding: 15px;
+    }
+}
+@media (max-width:770px){
+    .roadMap{
+        max-width: 100%;
+        padding: 20px 0 64px;
+        display: grid;
+        grid-template-columns: 1ft;
+    }
+    .connectImg{
+        max-width: 730px;
+        padding: 15px;
+    }
+}
+.backImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.relative {
+    max-width: 650px;
+    position: absolute  ;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  } 
+  
+.absolute {
+    position: relative;
+    top: 10px;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  .backTitle{
+      font-size: 32px;
+      color: white;
+  }
+  .backDescription{
+      color: white;
+  }
+  .backBtn{
+      border: 1px solid white;
+  }
+  .backLink{
+      color: white;
+      
+  }
+.backImgcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background: #172b4d;
+}
+.imgBox{
+    max-width: 185px;
+}
+.imgBack{
+    width: 100%;
+}
+.accessCard{
+    display: flex;
+    justify-content: center;
+    
+}
+.accessBox{
+    max-width: 430px;
+    padding: 15px 15px 64px 15px;
+    margin: 0;
+}
+.accessimgCard{
+    max-width: 430px;
+    margin-bottom: 30px;
+    
+}
+.accessImg{
+    width: 100%;
+    height: 200px ;
+    object-fit: cover;
+}
+.accessTitle{
+    font-size: 36px;
+}
+.accessComponent{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+}
+.accessCombox{
+    max-width: 350px;
+    padding: 10px;
+}
+.comboxImgcard{
+    max-width: 36px;
+}
+.comboxImg{
+    width: 100%;
+}
+.comboxTitle{
+    padding: 0;
+}
+.comLink{
+    text-decoration: none;
+    color: #0052cc;
+}
+.comLink:hover{
+    text-decoration: underline;
+}
+.combotText{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+.combotImg{
+    max-width: 200px;
+}
+.aboutCombot{
+    max-width: 750px;
+    padding: 15px 15px 64px 30px;
+}
+.combotDescription{
+    font-size: 20px;
+}
+.accessback{
+    background-image: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:ae6a494b-edfe-484f-a106-4539e348377b/marketplace%20section-update.svg?cdnVersion=1680);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 240px;
+}
+
+@media (max-width:1020px) {
+    .accessimgCard{
+        max-width: 480px;
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-width:770px) {
+    .accessBox{
+        max-width: 750px;
+    }
+    .accessCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .accessimgCard{
+        max-width: 720px;
+        margin-bottom: 30px;
+    }
+    .accessImg{
+        height: unset;
+    }
+    .accessCombox{
+        max-width: 730px;
+    }
+    .accessComponent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:540px){
+    .combotText{
+        display: flex;
+        flex-direction: column;
+    }
+    .combotImg{
+        max-width: 150px;
+    }
+}
+.dowappContainer{
+    width: 100%;
+    background: #ebecf0;
+}
+.appdowCard{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.appImg{
+    max-width: 100px;
+}
